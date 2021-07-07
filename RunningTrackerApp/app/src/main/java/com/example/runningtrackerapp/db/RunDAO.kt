@@ -9,8 +9,8 @@ interface RunDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertRun(run: Run)
 
-    @Delete
-    suspend fun deleteRun(run: Run)
+    /*@Delete
+    suspend fun deleteRun(run: Run)*/
 
     @Query("Select * FROM running_table ORDER BY timeStamp DESC")
     fun getAllRunsSortedByDate(): LiveData<List<Run>>
