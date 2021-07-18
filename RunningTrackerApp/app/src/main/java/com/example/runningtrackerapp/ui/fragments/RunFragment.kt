@@ -35,7 +35,6 @@ class RunFragment : Fragment(R.layout.fragment_run) , EasyPermissions.Permission
         checkBackgroundLocationPermissionAPI30(1)
         fab.setOnClickListener {
             findNavController().navigate(R.id.action_runFragment_to_trackingFragment)
-            
         }
     }
 
